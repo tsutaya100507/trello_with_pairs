@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: trello_with_pairs_production
-  username: trello_with_pairs
-  password: <%= ENV['TRELLO_WITH_PAIRS_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
